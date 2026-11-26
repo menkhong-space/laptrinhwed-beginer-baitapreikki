@@ -107,17 +107,14 @@
     </table>
     <h2>Tạo from tiềm kiếm và lọc sản phẩm</h2>
     <p>Từ khóa tìm kiếm</p>
-    <form
-      action="https://www.google.com/search?q=google+scholar&rlz=1C1CHZN_enVN1111VN1112&oq=goo&gs_lcrp=EgZjaHJvbWUqDwgCEAAYQxixAxiABBiKBTIGCAAQRRg5MgYIARAjGCcyDwgCEAAYQxixAxiABBiKBTINCAMQABiDARixAxiABDIMCAQQABhDGIAEGIoFMg8IBRAAGEMYsQMYgAQYigUyDQgGEAAYgwEYsQMYgAQyDwgHEAAYQxixAxiABBiKBTIHCAgQABiPAjIJCAkQIxgnGI8C0gEJNDUzN2owajE1qAIIsAIB8QXRuYyRTxIgUQ&sourceid=chrome&source=chrome.rb&ie=UTF-8"
-      method="GET"
-    >
-      <input
-        type="search"
-        name="tên sản phẩm"
-        placeholder="Nhập tên sản phẩm "
-      />
-      <p>Loại sản phẩm:</p>
-      <select name="loại sản phẩm">
+    <form action="https://www.google.com/?hl=vi" method="GET">
+      <input type="search" name="q" placeholder="Nhập tên sản phẩm " />
+      <br />
+      <button type="submit">Thực hiện tìm kiếm</button>
+    </form>
+    <form>
+      <p>Loại sản phẩm:</p>
+      <select name="loại sản phẩm">
         <option value disabled selected>--chọn sản phẩm--</option>
         <optgroup label="Điện thoại">
           <option value="text">phone</option>
@@ -127,8 +124,6 @@
       </select>
       <!-- TH1: tùy chọn hiển thị lựa chọn mặc đinh hiện -> nhập <option value=""selected>tên </option>
            TH2: định dạng nội dung rỗng để nhận diện nhanh -> option value disabled> data rỗng</option> -->
-      <br />
-      <button type="submit">Thực hiện tìm kiếm</button>
     </form>
   </body>
 </html>

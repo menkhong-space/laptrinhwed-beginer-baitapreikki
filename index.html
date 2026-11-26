@@ -59,5 +59,76 @@
       >. Mình yêu thích lập trình và luôn
       <b> cố gắng học tập mỗi ngày</b>
     </p>
+    <h2>Luyện tập bảng</h2>
+    <table border="1" , width="300">
+      <tr>
+        <th>Tên</th>
+        <th>Tuổi</th>
+        <th>Nghề nghiệp</th>
+      </tr>
+      <tr>
+        <td>Mến</td>
+        <td>18</td>
+        <td>sinh viên</td>
+      </tr>
+    </table>
+    <h3>Bảng thống kê thông tin</h3>
+    <table width="600" , border="2">
+      <thead>
+        <tr>
+          <th>Tháng</th>
+          <th colspan="2">Tỷ lệ đơn hàng theo tháng</th>
+        </tr>
+      </thead>
+      <tbody align="center">
+        <!-- Align: (v) căn chỉnh lề gồm center, left, right, justify[ căn đều hai bên lề ], top, middle[chính giữa], bottom, baseline[mốc chuẩn]
+        -->
+        <tr>
+          <td>Tháng 1</td>
+          <td>20%</td>
+          <td>80%</td>
+        </tr>
+        <tr>
+          <td>Tháng 2</td>
+          <td rowspan="2">50%</td>
+          <td>50%</td>
+        </tr>
+        <tr>
+          <td>Tháng 3</td>
+
+          <td>70%</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">tổng % đơn hàng theo tháng</td>
+        </tr>
+      </tfoot>
+    </table>
+    <h2>Tạo from tiềm kiếm và lọc sản phẩm</h2>
+    <p>Từ khóa tìm kiếm</p>
+    <form
+      action="https://www.google.com/search?q=google+scholar&rlz=1C1CHZN_enVN1111VN1112&oq=goo&gs_lcrp=EgZjaHJvbWUqDwgCEAAYQxixAxiABBiKBTIGCAAQRRg5MgYIARAjGCcyDwgCEAAYQxixAxiABBiKBTINCAMQABiDARixAxiABDIMCAQQABhDGIAEGIoFMg8IBRAAGEMYsQMYgAQYigUyDQgGEAAYgwEYsQMYgAQyDwgHEAAYQxixAxiABBiKBTIHCAgQABiPAjIJCAkQIxgnGI8C0gEJNDUzN2owajE1qAIIsAIB8QXRuYyRTxIgUQ&sourceid=chrome&source=chrome.rb&ie=UTF-8"
+      method="GET"
+    >
+      <input
+        type="search"
+        name="tên sản phẩm"
+        placeholder="Nhập tên sản phẩm "
+      />
+      <p>Loại sản phẩm:</p>
+      <select name="loại sản phẩm">
+        <option value disabled selected>--chọn sản phẩm--</option>
+        <optgroup label="Điện thoại">
+          <option value="text">phone</option>
+          <option value="text">laptop</option>
+          <option value="text">tablet</option>
+        </optgroup>
+      </select>
+      <!-- TH1: tùy chọn hiển thị lựa chọn mặc đinh hiện -> nhập <option value=""selected>tên </option>
+           TH2: định dạng nội dung rỗng để nhận diện nhanh -> option value disabled> data rỗng</option> -->
+      <br />
+      <button type="submit">Thực hiện tìm kiếm</button>
+    </form>
   </body>
 </html>
